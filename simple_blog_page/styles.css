@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #201f1f;
+    color: #fffcfc;
+}
+
+/* Header Section with Background Image */
+.header {
+    position: relative;
+    height:150vh; /* Full viewport height */
+    background: url('./1st_bg.jpg') center / cover no-repeat; /* Replace with your image path */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(70, 69, 69, 0.6); /* Darkens the background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1; /* Ensure text is above the overlay */
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Attention-grabbing color */
+}
+
+.header-content p {
+    font-size: 1.5rem;
+}
+
+
+/* Content Styles */
+.content {
+    padding: 40px 35px;
+    background-color: #fff;
+    color: #333;
+    min-height: calc(100vh - 100vh); /* Fill remaining viewport height */
+}
+
+.content section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Centered Image */
+.center-image-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    margin: 20px 0;
+}
+
+.center-image-container img {
+    max-width: 80%; /* Responsive image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Details Section */
+.details {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.items {
+    color: #f5f5f5;
+}
+
+.item-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.item-text {
+    font-size: 18px;
+}
+
+.item-data {
+    font-weight: bold;
+}
+
+/* Article Styles */
+article {
+    margin-bottom: 40px;
+}
+
+article h4, article h5 {
+    color: #7a7979;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Styles */
+.gallery {
+    margin: 30px 0;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    flex: 1 1 calc(33.333% - 20px);
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Author Section */
+.author {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.author-img {
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 5px solid #ffcc00; /* Highlight the author image */
+}
+
+.social-links a {
+    color: #ffcc00;
+    margin-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0077b5;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.comments .comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.comments .comment p {
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #eeedf8;
+    background-color: #333;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+    }
+
+    .gallery-container img {
+        flex: 1 1 100%;
+    }
+
+    .author-img {
+        margin: 0 auto 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
